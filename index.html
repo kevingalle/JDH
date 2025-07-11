@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>JDH Transportistas - Excelencia en Movimiento</title>
+  <meta name="description" content="JDH Transportistas - 30 años de experiencia en transporte federal. Certificación C-TPAT y servicios seguros a todo México.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="index.css">
+   <!-- Favicon -->
+  <link rel="icon" href="logos.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Navigation -->
+<nav>
+  <div class="container">
+    <a href="index.html" class="logo">
+      <img src="logos.jpg" alt="JDH Transportistas" />
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Inicio</a></li>
+      <li><a href="servicios.html">Servicios</a></li>
+      <li><a href="nosotros.html">Nosotros</a></li>
+      <li><a href="galeria.html">Galería</a></li>
+      <li><a href="contacto.html">Contacto</a></li>
+    </ul>
+    <div class="mobile-menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </div>
+</nav>
+
+
+  <!-- Header -->
+  <header id="inicio">
+    <div class="hero-content">
+        
+    </div>
+  </header>
+
+  <!-- Resumen de Servicios -->
+  <section class="resumen-servicios">
+    <div class="container">
+      <h2 class="fade-in">¿Por qué elegir JDH Transportistas?</h2>
+      <div class="grid">
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fas fa-truck"></i>
+          </div>
+          <h3>Transporte Seguro</h3>
+          <p>Unidades modernas y certificadas para garantizar la integridad de su carga en todo México.</p>
+          <a href="servicios.html" class="card-link">Ver Servicios</a>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>Certificación C-TPAT</h3>
+          <p>Operaciones con los más altos estándares internacionales de seguridad y calidad.</p>
+          <a href="servicios.html" class="card-link">Ver Certificaciones</a>
+        </div>
+        <div class="card fade-in">
+          <div class="card-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>30 Años de Experiencia</h3>
+          <p>Tres décadas de solidez, confianza y cumplimiento puntual en cada envío.</p>
+          <a href="nosotros.html" class="card-link">Conoce Nuestra Historia</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Llamada a la Acción -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <div class="cta-buttons">
+          <a href="contacto.html" class="btn btn-primary">Solicitar Cotización</a>
+          <a href="galeria.html" class="btn btn-secondary">Ver Nuestra Galería</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 JDH Transportistas. Todos los derechos reservados. | Excelencia en cada kilómetro</p>
+    </div>
+  </footer>
+
+  <script>
+  // Mobile menu toggle
+  const mobileMenu = document.querySelector('.mobile-menu');
+  const navLinks = document.querySelector('.nav-links');
+
+  mobileMenu.addEventListener('click', () => {
+    navLinks.classList.toggle('active');
+    mobileMenu.classList.toggle('active');
+  });
+
+  // Intersection Observer for fade-in animations
+  const observerOptions = {
+    threshold: 0.1,
+    rootMargin: '0px 0px -50px 0px'
+  };
+
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        entry.target.classList.add('visible');
+      }
+    });
+  }, observerOptions);
+
+  document.querySelectorAll('.fade-in').forEach(el => {
+    observer.observe(el);
+  });
+
+  // Navbar background on scroll
+  window.addEventListener('scroll', () => {
+    const nav = document.querySelector('nav');
+    if (window.scrollY > 100) {
+      nav.style.background = 'rgba(255, 255, 255, 0.98)';
+      nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+    } else {
+      nav.style.background = 'rgba(255, 255, 255, 0.95)';
+      nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+    }
+  });
+
+  // Logo resize based on scroll direction
+  let lastScrollTop = 0;
+  const logo = document.querySelector('.logo');
+
+  window.addEventListener('scroll', () => {
+    const scrollTop = window.scrollY;
+
+    if (scrollTop > lastScrollTop) {
+      // Scroll hacia abajo -> hacer el logo más grande
+      logo.classList.remove('logo-small');
+      logo.classList.add('logo-large');
+    } else {
+      // Scroll hacia arriba -> hacer el logo más pequeño
+      logo.classList.remove('logo-large');
+      logo.classList.add('logo-small');
+    }
+
+    lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+  });
+</script>
+
+  
+</body>
+</html>

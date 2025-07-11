@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Servicios - JDH Transportistas</title>
+  <meta name="description" content="Conoce nuestros servicios de transporte federal, certificación C-TPAT y soluciones logísticas integrales.">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="servicios.css">
+   <!-- Favicon -->
+  <link rel="icon" href="logos.ico" type="image/x-icon">
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <a href="index.html" class="logo">
+        <img src="logos.jpg" alt="JDH Transportistas" />
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html" class="active">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Header -->
+  <section class="page-header">
+    <div class="container">
+      <div class="page-header-content">
+        <h1>Nuestros Servicios</h1>
+        <p>Soluciones logísticas integrales con los más altos estándares de calidad</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Servicios -->
+  <section class="servicios">
+    <div class="container">
+      <h2 class="fade-in">Servicios Especializados</h2>
+      <div class="grid">
+
+        <div class="card fade-in">
+          <img src="seca.jpg" alt="Cajas secas" class="card-img">
+          <h3>Cajas Secas</h3>
+          <p>Cajas secas de 53´ pies con capacidad de 22 toneladas.</p>
+        </div>
+
+        <div class="card fade-in">
+          <img src="camio.webp" alt="Camionetas Caja Seca" class="card-img">
+          <h3>Camionetas Caja Seca</h3>
+          <p>Camionetas con capacidad de 1.5 y 3.5 toneladas.</p>
+        </div>
+
+        <div class="card fade-in">
+          <img src="carts.jpg" alt="Carga Intermodal Marítima" class="card-img">
+          <h3>Transporte de Carga Intermodal Marítima</h3>
+          <p>Equipo portacontenedor para contenedores marítimos de 20´ y 40´ pies.</p>
+        </div>
+
+        <div class="card fade-in">
+          <img src="caja1.jpg" alt="Torthon" class="card-img">
+          <h3>Torthon</h3>
+          <p>Unidades de 24´ pies con capacidad de 15 toneladas.</p>
+        </div>
+
+        <div class="card fade-in">
+          <img src="mudis.webp" alt="Mudanzas y Maniobristas" class="card-img">
+          <h3>Mudanzas y Maniobristas</h3>
+          <p>Personal altamente calificado para carga de muebles, material delicado, obras de arte, instrumentos, etc. Incluye servicio de embalaje.</p>
+        </div>
+
+        <div class="card fade-in">
+          <img src="certi.webp" alt="Certificación C-TPAT" class="card-img">
+          <h3>Certificación C-TPAT</h3>
+          <p>Contamos con certificación C-TPAT para mayor confiabilidad de nuestros clientes en su cadena de suministro.</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Certificaciones -->
+  <section class="certificaciones">
+    <div class="container">
+      <h2 class="fade-in">Certificaciones y Reconocimientos</h2>
+      <div class="cert-grid">
+        <div class="cert-item fade-in">
+          <div class="cert-icon">
+            <i class="fas fa-certificate"></i>
+          </div>
+          <h3>C-TPAT</h3>
+          <p>Customs-Trade Partnership Against Terrorism</p>
+        </div>
+        <div class="cert-item fade-in">
+          <div class="cert-icon">
+            <i class="fas fa-award"></i>
+          </div>
+          <h3>ISO 9001</h3>
+          <p>Sistema de Gestión de Calidad</p>
+        </div>
+        <div class="cert-item fade-in">
+          <div class="cert-icon">
+            <i class="fas fa-shield-alt"></i>
+          </div>
+          <h3>SCT</h3>
+          <p>Secretaría de Comunicaciones y Transportes</p>
+        </div>
+        <div class="cert-item fade-in">
+          <div class="cert-icon">
+            <i class="fas fa-leaf"></i>
+          </div>
+          <h3>Transporte Verde</h3>
+          <p>Compromiso con el medio ambiente</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section class="cta-section">
+    <div class="container">
+      <div class="cta-content fade-in">
+        <a href="contacto.html" class="btn btn-primary">Solicitar Cotización</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 JDH Transportistas. Todos los derechos reservados. | Excelencia en cada kilómetro</p>
+    </div>
+  </footer>
+
+  <script>
+    // Mobile menu toggle
+    const mobileMenu = document.querySelector('.mobile-menu');
+    const navLinks = document.querySelector('.nav-links');
+
+    mobileMenu.addEventListener('click', () => {
+      navLinks.classList.toggle('active');
+      mobileMenu.classList.toggle('active');
+    });
+
+    // Intersection Observer for fade-in animations
+    const observerOptions = {
+      threshold: 0.1,
+      rootMargin: '0px 0px -50px 0px'
+    };
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('visible');
+        }
+      });
+    }, observerOptions);
+
+    // Observe all fade-in elements
+    document.querySelectorAll('.fade-in').forEach(el => {
+      observer.observe(el);
+    });
+
+    // Navbar background on scroll
+    window.addEventListener('scroll', () => {
+      const nav = document.querySelector('nav');
+      if (window.scrollY > 100) {
+        nav.style.background = 'rgba(255, 255, 255, 0.98)';
+        nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+      } else {
+        nav.style.background = 'rgba(255, 255, 255, 0.95)';
+        nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+      }
+    });
+    // Logo scaling on scroll
+const logo = document.querySelector('.logo img');
+let lastScrollTop = 0;
+
+window.addEventListener('scroll', () => {
+  const nav = document.querySelector('nav');
+  const currentScrollTop = window.scrollY;
+  
+  // Efecto del navbar (código existente)
+  if (currentScrollTop > 100) {
+    nav.style.background = 'rgba(255, 255, 255, 0.98)';
+    nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.15)';
+  } else {
+    nav.style.background = 'rgba(255, 255, 255, 0.95)';
+    nav.style.boxShadow = '0 2px 20px rgba(0, 0, 0, 0.1)';
+  }
+  
+  // Efecto del logo
+  if (currentScrollTop > lastScrollTop && currentScrollTop > 50) {
+    // Scrolling hacia abajo - logo se agranda
+    logo.classList.add('scrolled');
+  } else if (currentScrollTop < lastScrollTop || currentScrollTop <= 50) {
+    // Scrolling hacia arriba o en la parte superior - logo se achica
+    logo.classList.remove('scrolled');
+  }
+  
+  lastScrollTop = currentScrollTop;
+});
+  </script>
+</body>
+</html>

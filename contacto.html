@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contacto - JDH Transportistas</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="contacto.css">
+    <!-- Favicon -->
+  <link rel="icon" href="logos.ico" type="image/x-icon">
+</head>
+</head>
+<body>
+  <!-- Navigation -->
+  <nav>
+    <div class="container">
+      <!-- LOGO COMO IMAGEN -->
+      <a href="index.html" class="logo">
+        <img src="logos.jpg" alt="JDH Transportistas" style="height: 50px;">
+      </a>
+      <ul class="nav-links">
+        <li><a href="index.html">Inicio</a></li>
+        <li><a href="servicios.html">Servicios</a></li>
+        <li><a href="nosotros.html">Nosotros</a></li>
+        <li><a href="galeria.html">Galería</a></li>
+        <li><a href="contacto.html">Contacto</a></li>
+      </ul>
+      <div class="mobile-menu">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+    </div>
+  </nav>
+
+
+<!-- Banner con texto centrado sobre imagen -->
+<div class="hero-banner">
+  <img src="coti.jpg" alt="Cotiza con nosotros">
+  <div class="overlay-text">
+    <h1>COTIZA CON<br>NOSOTROS</h1>
+  </div>
+</div>
+
+
+
+  <!-- Contact Section -->
+  <section class="contact-section">
+    <div class="container">
+      <div class="contact-grid">
+        <!-- Contact Information -->
+        <div class="contact-info fade-in">
+          <h3>Información de Contacto</h3>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="contact-details">
+              <h4>Oficina Principal</h4>
+              <p>Alfredo Lewis 202 Esq, Dr. Isidro Calera,Gremial <br>Aguascalientes, Ags. 200030</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-phone"></i></div>
+            <div class="contact-details">
+              <h4>Teléfono</h4>
+              <p>(449) 914 3580<br></p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+            <div class="contact-details">
+              <h4>Email</h4>
+              <p><br>paulina.gil@jdhtransportistas.com</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-clock"></i></div>
+            <div class="contact-details">
+              <h4>Horario de Atención</h4>
+              <p>Lunes a Viernes: 9:00 - 19:00<br>Sábados: 10:00 - 15:00</p>
+            </div>
+          </div>
+          <div class="contact-item">
+            <div class="contact-icon"><i class="fas fa-headset"></i></div>
+            <div class="contact-details">
+              <h4>Emergencias 24/7</h4>
+              <p>(449) 14-5594<br>Disponible las 24 horas</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Contact Form -->
+        <div class="contact-form fade-in">
+          <h3>Solicitar Cotización</h3>
+          <div class="success-message">
+            <i class="fas fa-check-circle"></i>
+            Su mensaje ha sido enviado correctamente. Nos pondremos en contacto pronto.
+          </div>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="nombre">Nombre Completo *</label>
+                <input type="text" id="nombre" name="nombre" required>
+              </div>
+              <div class="form-group">
+                <label for="empresa">Empresa</label>
+                <input type="text" id="empresa" name="empresa">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="telefono">Teléfono *</label>
+                <input type="tel" id="telefono" name="telefono" required>
+              </div>
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" required>
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="servicio">Tipo de Servicio</label>
+              <select id="servicio" name="servicio">
+                <option value="">Seleccione un servicio</option>
+                <option value="transporte-general">Transporte General</option>
+                <option value="carga-refrigerada">Carga Refrigerada</option>
+                <option value="carga-sobredimensionada">Carga Sobredimensionada</option>
+                <option value="materiales-peligrosos">Materiales Peligrosos</option>
+                <option value="distribucion-urbana">Distribución Urbana</option>
+                <option value="otros">Otros</option>
+              </select>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="origen">Ciudad de Origen</label>
+                <input type="text" id="origen" name="origen">
+              </div>
+              <div class="form-group">
+                <label for="destino">Ciudad de Destino</label>
+                <input type="text" id="destino" name="destino">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="mensaje">Descripción de la Carga / Comentarios *</label>
+              <textarea id="mensaje" name="mensaje" placeholder="Describa el tipo de carga, dimensiones, peso, fechas requeridas, etc." required></textarea>
+            </div>
+            <button type="submit" class="btn">
+              <i class="fas fa-paper-plane"></i> Enviar Solicitud
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Hours Section -->
+  <section class="hours-section">
+    <div class="container">
+      <h2 class="fade-in" style="text-align: center;">Nuestros Servicios</h2>
+      <div class="hours-grid">
+        <div class="hours-card fade-in">
+          <i class="fas fa-phone-alt"></i>
+          <h4>Atención Telefónica</h4>
+          <p>Nuestro equipo está disponible para atender sus consultas y brindar información detallada sobre nuestros servicios.</p>
+        </div>
+        <div class="hours-card fade-in">
+          <i class="fas fa-calculator"></i>
+          <h4>Cotizaciones Rápidas</h4>
+          <p>Reciba una cotización detallada en menos de 24 horas. Precios competitivos y transparentes.</p>
+        </div>
+        <div class="hours-card fade-in">
+          <i class="fas fa-route"></i>
+          <h4>Rastreo en Tiempo Real</h4>
+          <p>Monitoree su carga las 24 horas con nuestro sistema de rastreo GPS en tiempo real.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+<!-- Mapa real con Google Maps -->
+<section class="map-section">
+  <div class="container">
+    <h2 class="fade-in" style="text-align: center;">Nuestra Ubicación</h2>
+    <div class="map-container fade-in" style="text-align: center; margin-top: 20px;">
+      <iframe 
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3701.897253462266!2d-102.29382702471901!3d21.900031979976465!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8429ee5b7d4b5f71%3A0x16b676ac8f427a24!2sJDH%20Transportistas!5e0!3m2!1ses!2smx!4v1751289890836!5m2!1ses!2smx"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade">
+      </iframe>
+    </div>
+  </div>
+</section>
+
+
+
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2025 JDH Transportistas. Todos los derechos reservados. | Excelencia en cada kilómetro</p>
+    </div>
+  </footer>
+</body>
+</html>
